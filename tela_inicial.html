@@ -25,16 +25,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">início <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="tela_inicial.html">início <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">orquestração</a>
+              <a class="nav-link" href="tela_orquestracao.html">orquestração</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">histórico</a>
+              <a class="nav-link disabled" href="tela_historico.html">histórico</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">monitoração</a>
+                <a class="nav-link disabled" href="tela_final.html">monitoração</a>
               </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0">
@@ -112,30 +112,37 @@
               <div class="col-md-8 order-md-1">
                     <div class="card">
                             <div class="card-header">
-                                    <h4 class="mb-3">histórico das orquestrações</h4>
+                                    <h4 class="mb-3">scripts para o sistema </h4>
                             </div>
                             <div class="card-body">
                                     <span class="text-muted">configuração existente</span>
                                     <select class="custom-select">
                                             <option selected>escolha uma opção</option>
-                                            <option value="1">nome da orquestração</option>
-                                            <option value="2">Tempo total para gerar padrão de reconhecimento</option>
-                                            <option value="3">Quantidade de imagens reconhecidas e não reconhecidas</option>
-                                            <option value="3">Valor máximo, mínimo, média de uso de memória</option>
-                                            <option value="3">Valor máximo, mínimo, média de threads utilizados</option>
+                                            <option value="1">converter negativas</option>
+                                            <option value="2">nome da orquestração</option>
+                                            <option value="3">Tempo total para gerar padrão de reconhecimento</option>
+                                            <option value="4">Quantidade de imagens reconhecidas e não reconhecidas</option>
+                                            <option value="5">Valor máximo, mínimo, média de uso de memória</option>
+                                            <option value="6">Valor máximo, mínimo, média de threads utilizados</option>
                                           </select>
-                                          <form class="needs-validation" novalidate>
-                                                <div class="row">
-                                                  <div class="col-md-9 mb-6">
+                                          
+                                                    <span class="text-muted">nova configuração</span>
+                                                    <br>
+
+                                                    <label for="nome" class="form-inline">nome</label>
+                                                    <input class="form-control" type="text" placeholder="nome">
+                                                    <div class="col-md-9 mb-6">
+                                                    
                                                     <select class="custom-select">
-                                                          <option selected>escolha uma opção</option>
-                                                          <option value="1">c1</option>
-                                                          <option value="2">c2</option>
-                                                          <option value="3">d3</option>
-                                                          <option value="4">j1</option>
-                                                          <option value="5">a3</option>
+                                                          <option selected>carregar script</option>
+                                                          <option value="1">s1</option>
+                                                          <option value="2">s2</option>
+                                                          <option value="3">s3</option>
+                                                          <option value="4">s4</option>
+                                                          <option value="5">s5</option>
                                                         </select>
                                                   </div>
+                                                  <button type="submit" class="btn btn-secondary">| criar</button>
                                                 </div>
                             </div>
                           </div>

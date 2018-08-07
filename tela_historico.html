@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Tela orquestração</title>
+    <title>Tela inicial</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -112,24 +112,52 @@
               <div class="col-md-8 order-md-1">
                     <div class="card">
                             <div class="card-header">
-                                    <h4 class="mb-3">configurar orquestração</h4>
+                                    <h4 class="mb-3">scripts para o sistema </h4>
                             </div>
                             <div class="card-body">
-                                    <span class="text-muted">configuração existente</span>
-                                    <form class="needs-validation" novalidate>
-                                            <div class="row">
-                                              <div class="col-md-9 mb-6">
-                                                <select class="custom-select">
-                                                      <option selected>selecione orquestração em execução</option>
-                                                      <option value="1">c1</option>
-                                                      <option value="2">c2</option>
-                                                      <option value="3">d3</option>
-                                                      <option value="4">j1</option>
-                                                      <option value="5">a3</option>
-                                                    </select>
-                                              </div>
-                                            </div>
-                                    </form>                                          
+                                    <span class="text-muted">histórico das orquestrações</span>
+                                    <br>
+                                    Legenta da avaliação de cada orquestração:<br>
+                                    DHi - Data e hora inicial da execução<br>
+                                    DHf - Data e hora final da execução<br>
+                                    TGR - Tempo total para gerar padrão de reconhecimento imagens;<br>
+                                    QIR - Quantidade de imagens reconhecidas<br>
+                                    QINR - Quantidade de imagens não reconhecidas<br>
+                                    Vcpu - conjunto de valor máximo, mínimo, média e desvio padrão de uso de CPU<br>
+                                    VMem - Valor máximo, mínimo, média e desvio padrão de uso da memória<br>
+                                    VThreads - Valor máximo, mínimo, média e desvio padrão de uso de threads<br>
+                                    <br>
+                                    <select class="custom-select">
+                                            <option selected>selecione um orquestração</option>
+                                            <option value="1">c1</option>
+                                            <option value="2">c2</option>
+                                            <option value="3">c3</option>
+                                            <option value="4">c4</option>
+                                          </select>
+                                          <button type="submit" class="btn btn-secondary">| exportar</button>
+                                          <br>
+                                          
+                                                    <span class="text-muted">comparar resultados</span>
+                                                    <br>
+                                                    <select class="custom-select">
+                                                        <option selected>selecione uma orquestração</option>
+                                                        <option value="1">s1</option>
+                                                        <option value="2">s2</option>
+                                                        <option value="3">s3</option>
+                                                        <option value="4">s4</option>
+                                                        <option value="5">s5</option>
+                                                      </select>
+                                                      <label for="nome" class="form-inline">orquestração 1</label>
+                                                    <input class="form-control" type="text" placeholder="nome">
+
+                                                    <label for="nome" class="form-inline">orquestração 2</label>
+                                                    <input class="form-control" type="text" placeholder="nome">
+                                                    <div class="col-md-9 mb-6">
+                                                    
+                                                    
+                                                  </div>
+                                                  <button type="submit" class="btn btn-secondary">| gerar gráficos</button>
+                                                </div>
                             </div>
                           </div>
                 
