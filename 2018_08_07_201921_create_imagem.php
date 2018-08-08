@@ -16,12 +16,14 @@ class CreateImagem extends Migration
         Schema::create('imagem', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('caminho');
-            $table->string('tamnaho');
-            $table->string('largura');
-            $table->string('altura');
-            $table->string('nome');
-            $table->string('status');
+            $table->longText('caminho');
+            $table->integer('tamnaho');
+            $table->integer('largura');
+            $table->integer('altura');
+            $table->longText('nome');
+            $table->longText('status');
+            $table->integer('orquestracao_id');
+            $table->foreign('orquestracao_id')->references('id')->on('orquestracao');
         });
     }
 

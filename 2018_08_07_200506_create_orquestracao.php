@@ -16,7 +16,8 @@ class CreateOrquestracao extends Migration
         Schema::create('orquestracao', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->foreign('usuarios_id')->references('id')->on('usuarios');
+            $table->integer('usuarios_id');
+            $table->foreign('usuarios_id')->references('id')->on('users');
         });
     }
 

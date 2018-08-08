@@ -16,16 +16,17 @@ class CreateListaScriptsHistorico extends Migration
         Schema::create('lista_historico', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->timestamps('data');
-            $table->string('historico');
-            $table->timestamps('dhi');
-            $table->timestamps('dhf');
+            $table->date('data');
+            $table->longText('historico');
+            $table->date('dhi');
+            $table->date('dhf');
             $table->double('tgr');
             $table->double('qir');
             $table->double('qinr');
             $table->double('vcpu');
             $table->double('vmem');
             $table->double('threads');
+            $table->integer('orquestracao_id');
             $table->foreign('orquestracao_id')->references('id')->on('orquestracao');
         });
     }

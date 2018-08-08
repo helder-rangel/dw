@@ -16,8 +16,8 @@ class CreateListaScriptsOrquestracao extends Migration
         Schema::create('lista_scripts_orquestracao', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->script('nome');
-            $table->script('caminho_script');
+            $table->longText('nome');
+            $table->longText('caminho_script');
         });
     }
 
